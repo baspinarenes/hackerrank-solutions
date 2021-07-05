@@ -1,22 +1,3 @@
-# 10 Days of JavaScript Problem Çözümleri
-
-## Day 0
-
-### Hello World
-
-```js
-function greeting(parameterVariable) {
-  console.log('Hello, World!');
-  console.log(parameterVariable);
-}
-
-// hackerrank tarafından eklenen kodlar
-greeting('Welcome to 10 Days of JavaScript!');
-```
-
-### Data Types
-
-```js
 function performOperation(
   secondInteger, 
   secondDecimal, 
@@ -31,10 +12,8 @@ function performOperation(
   console.log(firstString + secondString);
 }
 
-// hackerrank tarafından eklenen kodlar
 performOperation(
   12, 
   4.32, 
   "is the best place to learn and practice coding!"
 );
-```
