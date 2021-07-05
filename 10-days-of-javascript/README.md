@@ -90,3 +90,34 @@ let perimeterOfCircle = 2 * PI * radius;
 console.log(areaOfCircle);
 console.log(perimeterOfCircle);
 ```
+
+## Day 2
+
+### Conditional Statements: If-Else
+
+```js
+function getGrade(score) {
+  let grade;
+  
+  if (25 < score) {
+      grade = "A";
+  } else if (20 < score) {
+      grade = "B";
+  } else if (15 < score) {
+      grade = "C";
+  } else if (10 < score) {
+      grade = "D";
+  } else if (5 < score) {
+      grade = "E";
+  } else {
+      grade = "F"; 
+  }
+  
+  return grade;
+}
+
+// hackerrank tarafından eklenen kodlar
+console.log(
+  getGrade(22)
+);
+```
