@@ -64,3 +64,16 @@ console.log(
   getPerimeter(length, width)
 );
 ```
+
+### Functions
+
+```js
+function factorial(number) {
+  return [0, 1].includes(number) ? 1 : number * factorial(number - 1);
+}
+
+// hackerrank tarafından eklenen kodlar
+console.log(
+  factorial(5)
+);
+```
