@@ -202,3 +202,20 @@ console.log(
   getSecondLargest([2, 3, 6, 6, 5])
 );
 ```
+
+### Try, Catch and Finally
+
+```js
+function reverseString(s) {
+  try {
+    const reversed = s.split('').reverse().join('');
+    console.log(reversed)
+  } catch (error) {
+    console.log(error.message);
+    console.log(s);
+  }
+}
+
+// hackerrank tarafından eklenen kodlar
+reverseString(Number(1234));
+```
