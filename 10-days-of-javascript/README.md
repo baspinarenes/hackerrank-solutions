@@ -219,3 +219,24 @@ function reverseString(s) {
 // hackerrank tarafından eklenen kodlar
 reverseString(Number(1234));
 ```
+
+### Throw
+
+```js
+function isPositive(a) {
+  if (a > 0) {
+    return "YES";
+  } else if (a === 0) {
+    throw new Error('Zero Error');
+  } else {
+    throw new Error('Negative Error');
+  }
+}
+
+// hackerrank tarafından eklenen kodlar
+try {
+  console.log(isPositive(-5));
+} catch (error) {
+  console.log(error.message);
+}
+```
