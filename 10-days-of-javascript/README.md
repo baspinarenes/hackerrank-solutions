@@ -24,7 +24,7 @@ function performOperation(
 ) {
   const firstInteger = 4;
   const firstDecimal = 4.0;
-  const firstString = 'HackerRank ';    
+  const firstString = 'HackerRank ';
 
   console.log(firstInteger + Number(secondInteger));
   console.log(firstDecimal + Number(secondDecimal));
@@ -100,17 +100,17 @@ function getGrade(score) {
   let grade;
   
   if (25 < score) {
-      grade = "A";
+    grade = "A";
   } else if (20 < score) {
-      grade = "B";
+    grade = "B";
   } else if (15 < score) {
-      grade = "C";
+    grade = "C";
   } else if (10 < score) {
-      grade = "D";
+    grade = "D";
   } else if (5 < score) {
-      grade = "E";
+    grade = "E";
   } else {
-      grade = "F"; 
+    grade = "F"; 
   }
   
   return grade;
@@ -239,4 +239,24 @@ try {
 } catch (error) {
   console.log(error.message);
 }
+```
+
+## Day 4
+
+### Create a Rectangle Object
+
+```js
+function Rectangle(a, b) {
+  this.length = a;
+  this.width = b;
+  this.perimeter = 2 * (a + b);
+  this.area = a * b;
+}
+
+// hackerrank tarafından eklenen kodlar
+const rectangle = new Rectangle(4, 5);
+console.log(rectangle.length)
+console.log(rectangle.width)
+console.log(rectangle.perimeter)
+console.log(rectangle.area)
 ```
