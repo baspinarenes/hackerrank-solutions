@@ -126,8 +126,6 @@ console.log(
 
 ```js
 function getLetter(s) {
-  let letter;
-
   const firstLetter = s.toLowerCase().charAt(0);
 
   switch (firstLetter) {
