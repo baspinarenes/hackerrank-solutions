@@ -301,3 +301,28 @@ class Polygon {
 let triangle = new Polygon([3, 4, 5]);
 console.log(triangle.perimeter())
 ```
+
+### Inheritance
+
+```js
+class Rectangle {
+  constructor(w, h) {
+    this.w = w;
+    this.h = h;
+  }
+}
+
+Rectangle.prototype.area = function() {
+  return this.w * this.h;
+};
+
+class Square extends Rectangle {
+  constructor(s) {
+    super(s, s);
+  } 
+}
+
+// hackerrank tarafından eklenen kodlar
+const sqr = new Square(5);
+console.log(sqr.area())
+```
