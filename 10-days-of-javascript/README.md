@@ -302,6 +302,8 @@ let triangle = new Polygon([3, 4, 5]);
 console.log(triangle.perimeter())
 ```
 
+## Day 5
+
 ### Inheritance
 
 ```js
@@ -347,5 +349,17 @@ console.log(
     140, 48
   )
 );
+```
 
+### Arrow Functions
+
+```js
+function modifyArray(nums) {
+  return nums.map((num) => !(num % 2) ? num * 2 : num * 3);
+}
+
+// hackerrank tarafından eklenen kodlar
+console.log(
+  modifyArray([1, 2, 3, 4, 5])
+);
 ```
