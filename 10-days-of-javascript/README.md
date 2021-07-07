@@ -363,3 +363,28 @@ console.log(
   modifyArray([1, 2, 3, 4, 5])
 );
 ```
+
+### Bitwise Operators
+
+```js
+function getMaxLessThanK(n, k) {
+  let maxValue= 0;
+  
+  for (let i = 1; i <= n; i++) {
+    for (let j = i + 1; j <= n ; j++) {
+      let bitwiseResult = i & j;
+
+      if (bitwiseResult < k && bitwiseResult > maxValue) {
+        maxValue = bitwiseResult;
+      }
+    }
+  }
+  
+  return maxValue;
+}
+
+// hackerrank tarafından eklenen kodlar
+console.log(
+  getMaxLessThanK(5, 2)
+);
+```
