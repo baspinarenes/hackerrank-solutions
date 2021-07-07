@@ -283,3 +283,21 @@ const objects = [
 
 getCount(objects);
 ```
+
+### Classes
+
+```js
+class Polygon {
+  constructor(sideLengths) {
+    this.sideLengths = sideLengths;
+  }
+
+  perimeter() {
+    return this.sideLengths.reduce((total, current) => total + current);
+  }
+}
+
+// hackerrank tarafından eklenen kodlar
+let triangle = new Polygon([3, 4, 5]);
+console.log(triangle.perimeter())
+```
