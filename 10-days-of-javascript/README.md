@@ -364,6 +364,8 @@ console.log(
 );
 ```
 
+## Day 6
+
 ### Bitwise Operators
 
 ```js
@@ -386,5 +388,22 @@ function getMaxLessThanK(n, k) {
 // hackerrank tarafından eklenen kodlar
 console.log(
   getMaxLessThanK(5, 2)
+);
+```
+
+### JavaScript Dates
+
+```js
+function getDayName(dateString) {
+  const daysOfWeeks = [
+    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+  ];
+
+  return daysOfWeeks[new Date(dateString).getDay()];
+}
+
+// hackerrank tarafından eklenen kodlar
+console.log(
+  getDayName('10/12/2009')
 );
 ```
