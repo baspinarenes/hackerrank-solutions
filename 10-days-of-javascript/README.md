@@ -6,25 +6,21 @@
 
 ```js
 function greeting(parameterVariable) {
-  console.log('Hello, World!');
+  console.log("Hello, World!");
   console.log(parameterVariable);
 }
 
 // hackerrank tarafından eklenen kodlar
-greeting('Welcome to 10 Days of JavaScript!');
+greeting("Welcome to 10 Days of JavaScript!");
 ```
 
 ### Data Types
 
 ```js
-function performOperation(
-  secondInteger, 
-  secondDecimal, 
-  secondString
-) {
+function performOperation(secondInteger, secondDecimal, secondString) {
   const firstInteger = 4;
   const firstDecimal = 4.0;
-  const firstString = 'HackerRank ';
+  const firstString = "HackerRank ";
 
   console.log(firstInteger + Number(secondInteger));
   console.log(firstDecimal + Number(secondDecimal));
@@ -32,11 +28,7 @@ function performOperation(
 }
 
 // hackerrank tarafından eklenen kodlar
-performOperation(
-  12, 
-  4.32, 
-  "is the best place to learn and practice coding!"
-);
+performOperation(12, 4.32, "is the best place to learn and practice coding!");
 ```
 
 ## Day 1
@@ -56,13 +48,9 @@ function getPerimeter(length, width) {
 let length = 3;
 let width = 4.5;
 
-console.log(
-  getArea(length, width)
-);
+console.log(getArea(length, width));
 
-console.log(
-  getPerimeter(length, width)
-);
+console.log(getPerimeter(length, width));
 ```
 
 ### Functions
@@ -73,16 +61,14 @@ function factorial(number) {
 }
 
 // hackerrank tarafından eklenen kodlar
-console.log(
-  factorial(5)
-);
+console.log(factorial(5));
 ```
 
 ### Let and Const
 
 ```js
 const PI = Math.PI;
-let radius = Number(readLine())
+let radius = Number(readLine());
 
 let areaOfCircle = PI * Math.pow(radius, 2);
 let perimeterOfCircle = 2 * PI * radius;
@@ -98,7 +84,7 @@ console.log(perimeterOfCircle);
 ```js
 function getGrade(score) {
   let grade;
-  
+
   if (25 < score) {
     grade = "A";
   } else if (20 < score) {
@@ -110,16 +96,14 @@ function getGrade(score) {
   } else if (5 < score) {
     grade = "E";
   } else {
-    grade = "F"; 
+    grade = "F";
   }
-  
+
   return grade;
 }
 
 // hackerrank tarafından eklenen kodlar
-console.log(
-  getGrade(22)
-);
+console.log(getGrade(22));
 ```
 
 ### Conditional Statements: Switch
@@ -157,17 +141,15 @@ function getLetter(s) {
 }
 
 // hackerrank tarafından eklenen kodlar
-console.log(
-  getLetter('Enes')
-);
+console.log(getLetter("Enes"));
 ```
 
 ### Loops
 
 ```js
 function vowelsAndConsonants(s) {
-  const vowels = ['a','e','i','o','u'];
-  const letters = s.split('');
+  const vowels = ["a", "e", "i", "o", "u"];
+  const letters = s.split("");
 
   const vowelsInWord = letters.filter((letter) => {
     return vowels.includes(letter);
@@ -198,9 +180,7 @@ function getSecondLargest(nums) {
 }
 
 // hackerrank tarafından eklenen kodlar
-console.log(
-  getSecondLargest([2, 3, 6, 6, 5])
-);
+console.log(getSecondLargest([2, 3, 6, 6, 5]));
 ```
 
 ### Try, Catch and Finally
@@ -208,8 +188,8 @@ console.log(
 ```js
 function reverseString(s) {
   try {
-    const reversed = s.split('').reverse().join('');
-    console.log(reversed)
+    const reversed = s.split("").reverse().join("");
+    console.log(reversed);
   } catch (error) {
     console.log(error.message);
     console.log(s);
@@ -227,9 +207,9 @@ function isPositive(a) {
   if (a > 0) {
     return "YES";
   } else if (a === 0) {
-    throw new Error('Zero Error');
+    throw new Error("Zero Error");
   } else {
-    throw new Error('Negative Error');
+    throw new Error("Negative Error");
   }
 }
 
@@ -255,10 +235,10 @@ function Rectangle(a, b) {
 
 // hackerrank tarafından eklenen kodlar
 const rectangle = new Rectangle(4, 5);
-console.log(rectangle.length)
-console.log(rectangle.width)
-console.log(rectangle.perimeter)
-console.log(rectangle.area)
+console.log(rectangle.length);
+console.log(rectangle.width);
+console.log(rectangle.perimeter);
+console.log(rectangle.area);
 ```
 
 ### Count Objects
@@ -266,19 +246,19 @@ console.log(rectangle.area)
 ```js
 function getCount(objects) {
   let count = objects.reduce((total, currentValue) => {
-    return currentValue.x === currentValue.y ? ++total : total
+    return currentValue.x === currentValue.y ? ++total : total;
   }, 0);
-  
+
   return count;
 }
 
 // hackerrank tarafından eklenen kodlar
 const objects = [
-  {x: 1, y: 1},
-  {x: 2, y: 3},
-  {x: 3, y: 3},
-  {x: 3, y: 4},
-  {x: 4, y: 5}
+  { x: 1, y: 1 },
+  { x: 2, y: 3 },
+  { x: 3, y: 3 },
+  { x: 3, y: 4 },
+  { x: 4, y: 5 },
 ];
 
 getCount(objects);
@@ -299,7 +279,7 @@ class Polygon {
 
 // hackerrank tarafından eklenen kodlar
 let triangle = new Polygon([3, 4, 5]);
-console.log(triangle.perimeter())
+console.log(triangle.perimeter());
 ```
 
 ## Day 5
@@ -314,19 +294,19 @@ class Rectangle {
   }
 }
 
-Rectangle.prototype.area = function() {
+Rectangle.prototype.area = function () {
   return this.w * this.h;
 };
 
 class Square extends Rectangle {
   constructor(s) {
     super(s, s);
-  } 
+  }
 }
 
 // hackerrank tarafından eklenen kodlar
 const sqr = new Square(5);
-console.log(sqr.area())
+console.log(sqr.area());
 ```
 
 ### Template Literals
@@ -336,32 +316,25 @@ function sides(literals, ...expressions) {
   const a = expressions[0];
   const p = expressions[1];
 
-  const s1 = (p + Math.sqrt(p**2 - 16 * a)) / 4;
-  const s2 = (p - Math.sqrt(p**2 - 16 * a)) / 4;
+  const s1 = (p + Math.sqrt(p ** 2 - 16 * a)) / 4;
+  const s2 = (p - Math.sqrt(p ** 2 - 16 * a)) / 4;
 
   return [s1, s2].sort((a, b) => a - b);
 }
 
 // hackerrank tarafından eklenen kodlar
-console.log(
-  sides(
-    [ 'The area is: ', '.\nThe perimeter is: ', '.' ], 
-    140, 48
-  )
-);
+console.log(sides(["The area is: ", ".\nThe perimeter is: ", "."], 140, 48));
 ```
 
 ### Arrow Functions
 
 ```js
 function modifyArray(nums) {
-  return nums.map((num) => !(num % 2) ? num * 2 : num * 3);
+  return nums.map((num) => (!(num % 2) ? num * 2 : num * 3));
 }
 
 // hackerrank tarafından eklenen kodlar
-console.log(
-  modifyArray([1, 2, 3, 4, 5])
-);
+console.log(modifyArray([1, 2, 3, 4, 5]));
 ```
 
 ## Day 6
@@ -370,10 +343,10 @@ console.log(
 
 ```js
 function getMaxLessThanK(n, k) {
-  let maxValue= 0;
-  
+  let maxValue = 0;
+
   for (let i = 1; i <= n; i++) {
-    for (let j = i + 1; j <= n ; j++) {
+    for (let j = i + 1; j <= n; j++) {
       let bitwiseResult = i & j;
 
       if (bitwiseResult < k && bitwiseResult > maxValue) {
@@ -381,14 +354,12 @@ function getMaxLessThanK(n, k) {
       }
     }
   }
-  
+
   return maxValue;
 }
 
 // hackerrank tarafından eklenen kodlar
-console.log(
-  getMaxLessThanK(5, 2)
-);
+console.log(getMaxLessThanK(5, 2));
 ```
 
 ### JavaScript Dates
@@ -396,14 +367,76 @@ console.log(
 ```js
 function getDayName(dateString) {
   const daysOfWeeks = [
-    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
   ];
 
   return daysOfWeeks[new Date(dateString).getDay()];
 }
 
 // hackerrank tarafından eklenen kodlar
+console.log(getDayName("10/12/2009"));
+```
+
+## Day 7
+
+### Regular Expressions I
+
+```js
+function regexVar() {
+  let re = /^([aeiou]).+\1$/;
+
+  return re;
+}
+
+// hackerrank tarafından eklenen kodlar
+const re = regexVar();
+const s = "abcda";
+    
 console.log(
-  getDayName('10/12/2009')
+  re.test(s)
 );
+```
+
+### Regular Expressions II
+
+```js
+function regexVar() {
+  let re = /^(Mr|Mrs|Ms|Dr|Er)\.[a-zA-z]+$/;
+
+  return re;
+}
+
+// hackerrank tarafından eklenen kodlar
+const re = regexVar();
+const s = "Mrs.Y";
+    
+console.log(
+  !!s.match(re)
+);
+```
+
+### Regular Expressions III
+
+```js
+function regexVar() {
+  let re = /\d+/g;
+
+  return re;
+}
+
+// hackerrank tarafından eklenen kodlar
+const re = regexVar();
+const s = "102, 1948948 and 1.3 and 4.5";
+    
+const r = s.match(re);
+
+for (const e of r) {
+  console.log(e);
+}
 ```
